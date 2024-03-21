@@ -64,23 +64,72 @@
         <div class="row">
           <main>
            <form action="#" method="post" class="form-grid">
+            <!--fieldset algemene gegevens-->
             <fieldset>
-              <legend class="text-uppercase fs-4 fw-bolder pt-3"></legend>
-            </fieldset>
-            
-            <fieldset>
-              <legend class="text-uppercase fs-4 fw-bolder pt-3"></legend>
-            </fieldset>
-            
-            <fieldset>
-              <legend class="text-uppercase fs-4 fw-bolder pt-3"></legend>
-              </fieldset>
-              <label for="fname">Voornaam</label><br>
+              <legend class="text-uppercase fs-4 fw-bolder pt-3">Algemene gegevens</legend>
+              <label for="fname">Voornaam <span style="color: koffiebruin;">*</span></label><br>
               <input type="text" id="fname" name="fname"><br>
-              <label for="lname">Achternaam</label><br>
+              
+              <label for="lname">Achternaam <span style="color: koffiebruin;">*</label><br>
               <input type="text" id="lname" name="lname"><br>
-           </form>
+              
+              <label for="tel">mobiel telefoonnummer <span style="color: koffiebruin;">*</label><br>
+              <input type="tel"id="mobiel tel" name="tel"><br>
+              
+              <label for="geboortedatum">Geboortedatum <span style="color: koffiebruin;">*</label><br>
+              <input type="date" name="birthday" id="birthday"><br>
+            </fieldset>
+            <!---- fieldset voor accountgegevens---> 
+            <fieldset>
+              <legend class="text-uppercase fs-4 fw-bolder pt-3">Accountgegevens</legend>
+              <label for="email">Vul uw E-mailadres in <span style="color: koffiebruin;">*</label><br>
+              <input type="email" id="email" name="email"><br>
 
+              <label for="password">Vul uw wachtwoord in <span style="color: koffiebruin;">*</label><br>
+              <input type="password" name="pwd" id="pwd"><br>
+              <label for="password">Bevestig uw wachtwoord <span style="color: koffiebruin;">*</label><br>
+              <input type="password"name="pwd" id="pwd" placeholder="Bevestig wachtwoord"><br>
+            </fieldset>
+            <!--fieldset met adresgegevens-->
+            <fieldset>
+              <legend class="text-uppercase fs-4 fw-bolder pt-3">Adresgegevens</legend>
+              <label for="text">Adres <span style="color: koffiebruin;">*</label><br>
+              <input type="adress" name="adres" id="adres" placeholder="Straatnaam + huisnummer invullen"><br>
+              <label for="text">Stad <span style="color: koffiebruin;">*</label><br>
+              <input type="stad" id="stad" placeholder="vul uw stad in"><br>
+              <label for="land">Kies een land <span style="color: koffiebruin;">*</label><br>
+              <select id="land" name="land">
+              <option value="België" selected>België</option>
+              <option value="Duitsland">Duitsland</option>
+              <option value="Frankrijk">Frankrijk</option>
+              <option value="Luxemburg">Luxemburg</option>
+              <option value="Nederland">Nederland</option>
+              <option value="Verenigd Koninkrijk">Verenigd Koninkrijk</option>
+            </select><br>
+              </fieldset>
+              <!--fieldset koffie-achtergrond-->
+              <fieldset>
+                <legend class="text-uppercase fs-4 fw-bolder pt-3">Koffie-achtergrond</legend>
+                <p>Ik koop:</p>
+                <input type="radio" id="Koffiebonen" name="koffie_type" value="Koffiebonen">
+                <label for="Koffiebonen">Koffiebonen</label><br>
+                <input type="radio" id="Oploskoffie" name="koffie_type" value="Oploskoffie">
+                <label for="Oploskoffie">Oploskoffie</label> <br>
+                <input type="radio" id="gemalen_koffie" name="koffie_type" value="Gemalen koffie">
+                <label for="Gemalen koffie">Gemalen koffie</label>
+                <p>En ben fan van:</p>
+                <select id="koffie_brand" name="koffie_brand">
+                  <option value="Illy">Illy</option>
+                  <option value="Lavazza">Lavazza</option>
+                  <option value="Starbucks">Starbucks</option>
+                  <option value="Gran Maestro Italiano">Gran Maestro Italiano</option>
+                  <option value="Celeste d'Oro">Celeste d'Oro</option>
+                </select><br>
+                <label for="tevredenheid">Hoe tevreden ben je van on?</label><br>
+                <input type="range" id="tevredenheid" name="tevredenheid" min="0" max="10" step="1"><br>
+              </fieldset>
+              <input type="submit" value="Indienen">
+            </form>
           </main>
 
           <aside class="col-md-3">
