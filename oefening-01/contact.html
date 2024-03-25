@@ -123,32 +123,38 @@
               </fieldset>
               
               <!--fieldset koffie-achtergrond-->
-              <fieldset>
+              <fieldset class="row g-3 mb-3 mt-3">
                 <legend class="text-uppercase fs-4 fw-bolder pt-3">Koffie-achtergrond</legend>
-                <p>Ik koop:</p>
-                <input type="radio" id="Koffiebonen" name="koffie_type" value="Koffiebonen">
-                <label for="Koffiebonen">Koffiebonen</label><br>
-                <input type="radio" id="Oploskoffie" name="koffie_type" value="Oploskoffie">
-                <label for="Oploskoffie">Oploskoffie</label> <br>
-                <input type="radio" id="gemalen_koffie" name="koffie_type" value="Gemalen koffie">
-                <label for="Gemalen koffie">Gemalen koffie</label>
-                <p>En ben fan van:</p>
-                <select id="koffie_brand" name="koffie_brand">
-                  <option value="Illy">Illy</option>
-                  <option value="Lavazza">Lavazza</option>
-                  <option value="Starbucks">Starbucks</option>
-                  <option value="Gran Maestro Italiano">Gran Maestro Italiano</option>
-                  <option value="Celeste d'Oro">Celeste d'Oro</option>
-                </select><br>
-                <label for="tevredenheid">Hoe tevreden ben je van on?</label><br>
-                <input type="range" id="tevredenheid" name="tevredenheid" min="0" max="10" step="1"><br>
+                <div class="col-6">
+                  <label for="koffie" class="form-label">ik koop</label>
+                  <select id="koffie" class="form-select">
+                    <option value="bonen" selected>koffiebonen</option>
+                    <option value="gemalen">gemalen koffie</option>
+                    <option value="oplos">oploskoffie</option>
+                  </select>
+                </div>
+                <div class="col-6">
+                  <label for="brand" class="form-label">en ben fan van het merk</label>
+                  <select id="brand" class="form-select">
+                    <option value="Illy" selected>Illy</option>
+                    <option value="Lavazza">Lavazza</option>
+                    <option value="Starbucks">Starbucks</option>
+                    <option value="Gran Maestro Italiano">Gran Maestro Italiano</option>
+                    <option value="Celeste d'Oro">Celeste d'Oro</option>
+                  </select>
+                </div>
+                <div class="col"></div>
+                <label for="satisfied" class="form-label">Hoe tevreden ben je van ons?</label><br>
+                <input type="range" class="form-range" id="satisfied" name="tevredenheid" min="0" max="10" step="1"><br>
               </fieldset>
-              <input type="submit" value="Indienen">
+             <div class="col-12">
+              <button type="submit" class="btn btn-primary"> Verzenden</button>
+            </div>
             </form>
           </section>
           </main>
 
-          <aside class="col-md-3">
+          <aside class="col-md-3 border-start ps-5">
             <h2 class="text-uppercase fs-4 fw-bolder pt-3">contact</h2>
             <p>COFFEE shop<br>
               email <a href="mailto:mail@ap-coffeeshop.be">mail@ap-coffeeshop.be</a><br>
