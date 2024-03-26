@@ -73,19 +73,22 @@
               <form action="#" method="post">
             <!--fieldset algemene gegevens-->
             <fieldset class="row g-3 mb-3">
-              <legend class="text-uppercase fs-4 fw-bolder pt-3">Algemene gegevens</legend>
-              <div class="col-xl-6">
-                <label for="fname">Voornaam <span style="color: koffiebruin;">*</span></label><br>
-                <input type="text" id="fname" name="fname"><br>
+              <legend class="text-uppercase fs-6 fw-bolder pt-3">Algemene gegevens</legend>
+              <div class="col-md-6">
+                <label for="fname">Voornaam <span>*</span></label><br>
+                <input type="text"  class="form-control" id="fname" name="fname" required>
               </div>
-              <label for="lname">Achternaam <span style="color: koffiebruin;">*</label><br>
-              <input type="text" id="lname" name="lname"><br>
+              <div class="col-md-6">
+              <label for="lname">Achternaam <span>*</label>
+              <input type="text" id="lname" name="lname" class="form-control" required></div>
               
-              <label for="tel">mobiel telefoonnummer <span style="color: koffiebruin;">*</label><br>
-              <input type="tel"id="mobiel tel" name="tel"><br>
-              
-              <label for="geboortedatum">Geboortedatum <span style="color: koffiebruin;">*</label><br>
-              <input type="date" name="birthday" id="birthday"><br>
+              <div class="col-6">
+              <label for="tel">mobiel telefoonnummer</label>
+              <input type="tel"id="mobiel" class="form-control" placeholder="0412 34 56 78"></div>
+              <div class="col-6">
+              <label for="birthDate" class="form-label">Geboortedatum </label>
+              <input type="date" name="birthday" id="birthday"></div>
+
             </fieldset>
             <!---- fieldset voor accountgegevens---> 
             <fieldset class="row g-3 mb-3 mt-3">
